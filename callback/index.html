@@ -1,0 +1,6 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Tesla sign-in complete</title></head>
+<body><h1>Tesla sign-in complete</h1><p>Copy the full address from your browser's address bar (it contains <code>code=</code>) and send it back to your bot.</p>
+<p>Code: <code id="c"></code></p>
+<script>document.getElementById('c').textContent=new URLSearchParams(location.search).get('code')||'(none)';</script>
+</body></html>
